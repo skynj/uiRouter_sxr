@@ -1,0 +1,56 @@
+*{
+	margin:0;
+	padding:0;
+}
+ul,li{
+	list-style: none;
+}
+.lianxi{
+	margin:auto;
+	width: 600px;
+}
+.lianxi li{
+	float: left;
+	width: 120px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	cursor: pointer;
+	background: #96b97d;
+	color: #fff;
+	font-size: 18px;
+}
+.lianxi li:hover{
+	color: #e3efd9;
+}
+.clear{
+	clear: both;
+}
+.tab1View{
+	border:1px solid #ddd;
+	margin:auto;
+	width: 600px;
+	box-sizing: border-box;
+	padding:10px;
+}
+.angularTab ul{
+	float: left;
+}
+.angularTab li{
+	cursor: pointer;
+	background: #f6f4f0;
+	color: #000;
+	font-size: 14px;
+	height: 20px;
+	line-height: 20px;
+	width: 70px;
+}
+.angularTab li.active{
+	background:#96b97d;
+	color: #fff; 
+}
+.tab1C{
+	overflow: hidden;
+	margin-left: 70px;
+	padding:0 10px;
+}

@@ -1,0 +1,15 @@
+<div>
+	<div class="angularTab">
+		<ul>
+			<li ng-repeat="item in tab" ui-sref="{{item.link}}" ng-click='addActive($index)' ng-class='{active:tabS.tabA==$index}'>{{item.txt}}</li>
+		</ul>
+		<div ui-view class="tab1C"></div>
+	</div>
+	<!-- <div class="angularTab">
+		<ul>
+			<li ng-repeat="item in tab2" ui-sref="{{item.link}}" ng-click='addActive2($index)' ng-class='{active:tabS.tabB==$index}'>{{item.txt}}</li>
+		</ul>
+		<div ui-view="tab2" class="tab1C"></div>
+	</div> -->
+	<div class="clear"></div>
+</div>

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<div class="container" ng-app="myApp" ng-controller="myControl">
+		<ul class="lianxi">
+			<li ui-sref="html">HTML</li>
+			<li ui-sref="css">CSS</li>
+			<li ui-sref="js">JAVASCRIPT</li>
+			<li ui-sref="jquery">JQUERY</li>
+			<li ui-sref="angular">ANGULARJS</li>
+			<div class="clear"></div>
+		</ul>
+		<div ui-view class="tab1View"></div>
+	</div>
+	
+</body>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/angular.min.js"></script>
+<script src="js/angular-ui-router.min.js"></script>
+<script src="js/myModule.js"></script>
+<script>
+	
+	$('.angularTab>ul>li').on('click',function(){
+		$(this).addClass('active').siblings().removeClass('active')
+	})
+</script>
+</html>
